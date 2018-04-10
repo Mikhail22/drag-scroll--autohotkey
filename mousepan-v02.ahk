@@ -1,7 +1,7 @@
 /*
-== "Pan" v.02 
+== "MousePan" v.02 
 == Mikhail V. 2018 
-== AHK1.1 
+== AHK1.1.28
 == System-wide mouse-movement scroll
 
 Note: this version uses right mouse button to scroll, so you need 
@@ -19,8 +19,8 @@ To swap the scroll direction: see line
 #NoEnv  ; Recommended for performance and compatibility with future AutoHotkey releases.
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
 
-; install mouse hook - needed to read physical state 
-; of the mouse button (when blocked by another thread)
+; install mouse hook - needed to read the physical state 
+; of the mouse button (e.g. when it is blocked by another thread)
 #InstallMouseHook
 
 ; min function
@@ -30,6 +30,7 @@ min(a,b) {
 	}
 	return a
 }
+
 ; scroll function : d = direction, n = amount of scrolls
 scroll(d, n) {
 	if (d = 1) {
