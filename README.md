@@ -9,7 +9,7 @@ For smoother scrolling experience set the scroll step to **"1"** in mouse proper
 
 Note: to prevent the context menu popup, run another AHK script "rbutton-block.ahk" -  
 it will block the Rbutton system-wide.  
-To invoke the context menu - just use Shift- or Ctrl-rightclick.
+To invoke the context menu - just use Shift- or Ctrl-rightclick.  
 To bind another key - edit the script (see comments in file)  
 
 ### ` rbutton-block.ahk `
