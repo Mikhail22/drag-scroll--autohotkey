@@ -43,12 +43,12 @@ scroll(d, n) {
 
 ; ----- MAIN -----
 mousegetpos, , preY	; get mouse Y position
-movelimit := 20		; max amount of scroll at once
+movelimit := 15		; max amount of scroll at once
 ; swap := true 			; flag to swap scroll direction
 swap := false 			; flag to swap scroll direction
 loop 
 {
-	sleep, 20
+	sleep, 30
 	pan := getkeystate("rbutton", "P")		; set the key used to scroll
 	mousegetpos, , Y						; get new mouse position Y
 	dY := Y - preY
