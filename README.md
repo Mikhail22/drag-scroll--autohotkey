@@ -7,12 +7,10 @@ Scrolling method and speed are optimized for most comfortable usage, but of cour
 
 ### installation
 To use the script you need AHK on your computer. This script was tested with AHK 1.1.28 on Windows 10 (other Windows versions should also work).  
-You can download AHK here:  
-https://www.autohotkey.com/download/1.1/
+You can download AHK here: https://www.autohotkey.com/download/1.1/  
 (easiest option is to pick an .exe installer with recent version)
 
-Check out official website for more information:
-https://www.autohotkey.com/
+Check out official website for more information: https://www.autohotkey.com/
 
 ### run the script
 Once you have successfully installed Autohotkey, you can run scripts by double-clicking on the `.ahk` files in explorer. Put all 3 files in some folder and run `mouse-scroll-run.ahk`.
@@ -30,7 +28,6 @@ To swap the scroll direction: see line
 -->    swap := true
 
 ### files desription
-` mousepan-v02.ahk `  
-Main script. Describes the scrolling logic.  
-` rbutton-block.ahk `  
-Prevents the right mouse button system-wide.
+`mouse-scroll-run.ahk` Run this script to run the other two scripts.  
+`mouse-scroll.ahk` Main script. Describes the scrolling logic.  
+`rbutton-block.ahk` Prevents the right mouse button system-wide.
