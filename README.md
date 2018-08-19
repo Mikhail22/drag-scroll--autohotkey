@@ -22,12 +22,12 @@ The script will block the Rbutton system-wide. To invoke the context menu - just
 Right mouse button is chosen for best ergonomics, but this can be changed in ` mousepan-v02.ahk ` file.
 
 To set another key: see line  
--->    pan := getkeystate("rbutton", "P")  
+    pan := getkeystate("rbutton", "P")  
 
 To swap the scroll direction: see line  
--->    swap := true
+    swap := true
 
 ### files desription
 `mouse-scroll-run.ahk` Run this script to run the other two scripts.  
-`mouse-scroll.ahk` Main script. Describes the scrolling logic.  
+`mouse-scroll-v02.ahk` Main script. Describes the scrolling logic.  
 `rbutton-block.ahk` Prevents the right mouse button system-wide.
