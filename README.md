@@ -23,6 +23,7 @@ Right mouse button is chosen for best ergonomics, but this can be changed in the
 
 To set another key: see line  
 > pan := getkeystate("rbutton", "P")  
+
 To swap the scroll direction: see line  
 > swap := true
 
