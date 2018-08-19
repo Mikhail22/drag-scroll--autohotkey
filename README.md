@@ -6,8 +6,7 @@ Scrolling method and speed are optimized for most comfortable usage, but of cour
 <img src="https://github.com/Mikhail22/Autohotkey/blob/master/img/wheel.png">  
 
 ### installation
-To use the script you need AHK on your computer. This script was tested with AHK 1.1.28  
-on Windows 10 (other Windows versions should also work).  
+To use the script you need AHK on your computer. This script was tested with AHK 1.1.28 on Windows 10 (other Windows versions should also work).  
 You can download AHK here:  
 https://www.autohotkey.com/download/1.1/
 (easiest option is to pick an .exe installer with recent version)
@@ -15,32 +14,23 @@ https://www.autohotkey.com/download/1.1/
 Check out official website for more information:
 https://www.autohotkey.com/
 
-### run
-Once you have successfully installed Autohotkey, you can run scripts by double-clicking 
-on the `.ahk` files in explorer. Put all 3 files in some folder and run `mouse-scroll-run.ahk`.
-This will run two other AHK scripts (2 threads are needed for stable functionality,
-see comments below).
+### run the script
+Once you have successfully installed Autohotkey, you can run scripts by double-clicking on the `.ahk` files in explorer. Put all 3 files in some folder and run `mouse-scroll-run.ahk`.
+This will automatically run two AHK scripts (2 threads are needed for stable functionality).
 
 ### usage
-Press and hold the right mouse button to scroll - more movements will scroll faster.  
-The script will block the Rbutton system-wide.  To invoke the context menu - just use 
-Shift-RightClick or Ctrl-rightclick.  
-Right mouse button is chosen for its best ergonomics, but this can be changed.
+Press and hold the right mouse button to scroll - faster movement will scroll more.  
+The script will block the Rbutton system-wide. To invoke the context menu - just use Shift-RightClick or Ctrl-rightclick.  
+Right mouse button is chosen for best ergonomics, but this can be changed in ` mousepan-v02.ahk ` file.
 
-To set another key: see ` mousepan-v02.ahk ` line 
--->    pan := getkeystate("rbutton", "P")
-To swap the scroll direction: see line
+To set another key: see line  
+-->    pan := getkeystate("rbutton", "P")  
+
+To swap the scroll direction: see line  
 -->    swap := true
 
 ### files desription
-
 ` mousepan-v02.ahk `  
-Main script. Describes the scrolling logic.
-Here some options can be changed (e.g. swap direction)
-Note: to prevent the context menu popup, another AHK script "rbutton-block.ahk" -  
-must be running before this script is run.  
-
-To bind another key - edit the script (see comments in file)  
-
-## ` rbutton-block.ahk `
+Main script. Describes the scrolling logic.  
+` rbutton-block.ahk `  
 Prevents the right mouse button system-wide.
