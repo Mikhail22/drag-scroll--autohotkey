@@ -1,17 +1,49 @@
-# Autohotkey scripts
-My AHK scripts. AHK version 1.1.28
-### ` mousepan-v02.ahk `
-This script provides a system-wide mouse scrolling functionality.  
-Hold the right mouse button to scroll - more movements will scroll faster.  
-
-For smoother scrolling experience set the scroll step to **"1"** in mouse properties:  
+# Autohotkey - Mouse scroll
+This Autohotkey (short: AHK) script provides system-wide mouse scrolling functionality.  
+By using this script you don't have to use the mouse wheel for scrolling anymore.  
+Instead, it uses mouse vertical movement for scrolling, which turns out to be 
+much more efficient and it also significantly reduces stress on the operator's hand.  
+Scrolling method and speed are optimized for most comfortable usage, but of course it 
+can be modified further.
+**Important**: For smoother scrolling set the scroll step to **"1"** in windows mouse properties:  
 <img src="https://github.com/Mikhail22/Autohotkey/blob/master/img/wheel.png">  
 
-Note: to prevent the context menu popup, first run another AHK script "rbutton-block.ahk" -  
-you must run it **BEFORE** you start the "mousepan-v02.ahk" script to make it work.  
-This will block the Rbutton system-wide.  
-To invoke the context menu - just use Shift- or Ctrl-rightclick.  
+### installation
+To use the script you need AHK on your computer. This script was tested with AHK 1.1.28  
+on Windows 10 (other Windows versions should also work).  
+You can download AHK here:  
+https://www.autohotkey.com/download/1.1/
+(easiest option is to pick an .exe installer with recent version)
+
+Check out official website for more information:
+https://www.autohotkey.com/
+
+### run
+Once you have successfully installed Autohotkey, you can run scripts by double-clicking 
+on the `.ahk` files in explorer. Put all 3 files in some folder and run `mouse-scroll-run.ahk`.
+This will run two other AHK scripts (2 threads are needed for stable functionality,
+see comments below).
+
+### usage
+Press and hold the right mouse button to scroll - more movements will scroll faster.  
+The script will block the Rbutton system-wide.  To invoke the context menu - just use 
+Shift-RightClick or Ctrl-rightclick.  
+Right mouse button is chosen for its best ergonomics, but this can be changed.
+
+To set another key: see ` mousepan-v02.ahk ` line 
+-->    pan := getkeystate("rbutton", "P")
+To swap the scroll direction: see line
+-->    swap := true
+
+### files desription
+
+` mousepan-v02.ahk `  
+Main script. Describes the scrolling logic.
+Here some options can be changed (e.g. swap direction)
+Note: to prevent the context menu popup, another AHK script "rbutton-block.ahk" -  
+must be running before this script is run.  
+
 To bind another key - edit the script (see comments in file)  
 
-### ` rbutton-block.ahk `
+## ` rbutton-block.ahk `
 Prevents the right mouse button system-wide.
