@@ -20,7 +20,9 @@ This will automatically run two AHK scripts (2 threads are needed for stable fun
 Press and hold the right mouse button to scroll - faster movement will scroll more.  
 The script will block the Rbutton system-wide. To invoke the context menu - just use Shift-RightClick or Ctrl-RightClick.  
 Right mouse button is chosen for best ergonomics, but this can be changed in the main script file.  
+
 Some setup variables are available, see "Settings" section directly in the source code (mouse-scroll-v02.ahk).  
+Simply edit the variable in the source code and restart it.
 
 To set the scroll speed, edit the line:  
 > k := 0.6
@@ -33,6 +35,7 @@ To swap the scroll direction: see line
 
 To set another key for scrolling, see line  
 > pan := getkeystate("rbutton", "P")  
+
 (refer to official Autohotkey documentation for the `getkeystate()` function and key names)  
 
 ### files description
