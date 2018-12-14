@@ -4,7 +4,7 @@ By using this script you don't have to use the mouse wheel for scrolling anymore
 Scrolling speed is optimized for most comfortable usage with Firefox with smooth scrolling enabled, but of course it can be modified further.  
 **Important**: For smoother scrolling set the scroll step to **"1"** in windows mouse properties:  
 <img src="https://github.com/Mikhail22/Autohotkey/blob/master/img/wheel.png">  
-Note: The script will block the Rbutton function (e.g. Context menu) system-wide. To invoke the context menu - just use Shift-RightClick or Ctrl-RightClick.  If you still need Rbutton in some apps, you might want to add conditional directives to both  scripts, which will exclude specific applications (e.g. directive `#If !winActive("ahk_exe SOME_APP.exe")`).  
+Note: The script will block the Rbutton function (e.g. Context menu) system-wide. To invoke the context menu - use double-RightClick, or Shift-RightClick or Ctrl-RightClick.  If you still need Rbutton in some apps, you might want to add conditional directives to both  scripts, which will exclude specific applications (e.g. directive `#If !winActive("ahk_exe SOME_APP.exe")`).  
 
 ### installation
 To use the script you need AHK on your computer. This script was tested with AHK 1.1.28 on Windows 10 (other Windows versions should also work).  
@@ -19,7 +19,14 @@ This will automatically run two AHK scripts (2 threads are needed for stable fun
 ### usage
 Press and hold the right mouse button to scroll - faster movement will scroll more.  
 The script will block the Rbutton system-wide. To invoke the context menu - just use Shift-RightClick or Ctrl-RightClick.  
-Right mouse button is chosen for best ergonomics, but this can be changed in the main script file.
+Right mouse button is chosen for best ergonomics, but this can be changed in the main script file.  
+Some setup variables are available, see "Settings" section directly in the source code (mouse-scroll-v02.ahk).  
+
+To set speed, edit the line:  
+> k := 0.6
+
+To set the double-RightClick threshold in milliseconds, edit the line:  
+> T := 300
 
 To set another key: see line  
 > pan := getkeystate("rbutton", "P")  
