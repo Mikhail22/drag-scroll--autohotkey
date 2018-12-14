@@ -22,17 +22,18 @@ The script will block the Rbutton system-wide. To invoke the context menu - just
 Right mouse button is chosen for best ergonomics, but this can be changed in the main script file.  
 Some setup variables are available, see "Settings" section directly in the source code (mouse-scroll-v02.ahk).  
 
-To set speed, edit the line:  
+To set the scroll speed, edit the line:  
 > k := 0.6
 
 To set the double-RightClick threshold in milliseconds, edit the line:  
 > T := 300
 
-To set another key: see line  
-> pan := getkeystate("rbutton", "P")  
-
 To swap the scroll direction: see line  
 > swap := true
+
+To set another key for scrolling, see line  
+> pan := getkeystate("rbutton", "P")  
+(refer to official Autohotkey documentation for the `getkeystate()` function and key names)  
 
 ### files description
 `mouse-scroll-run.ahk` Run this script to run the other two scripts.  
