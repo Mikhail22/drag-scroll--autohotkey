@@ -52,6 +52,7 @@ movelimit := 15				; max amount of scroll at once (better leave as is)
 mousegetpos, , Yp									; get mouse Y position
 panp := getkeystate("rbutton", "P")					; save key state / set the key used to scroll
 tikp := A_TickCount									; save time
+dY := 0
 
 loop 
 {
@@ -61,10 +62,15 @@ loop
 	panp := pan
 	; tooltip %pan%
 	mousegetpos, , Y									; get current mouse position Y
-	dY := k * (Y - Yp)								; relative mouse movement
+	dY := dY + (k * (Y - Yp))						; relative mouse movement
 	Yp := Y											; save Y position
 	moves := min(floor(abs(dY)), movelimit)			; amount of scroll events per once
 	direct := (dY >= 0) ^ swap						; get direction
+	if (moves = movelimit) {
+		dY := 0										; dY should always go to zero if movelimit is reached
+	} else {
+		dY := dY - (moves * (-1)**(dY < 0))			; dY remainder should remain for next loop (incase mouse is moving slowly)
+	}
 	; tooltip,  %direct% , %dY%	
 	if (pan = true) {
 		scroll(direct, moves)
