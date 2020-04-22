@@ -6,20 +6,21 @@ By using this script you don't have to use the mouse wheel for scrolling anymore
   
 
 ### installation
-To use the script you need AHK on your computer. This script was tested with AHK 1.1.28 on Windows 10 (other Windows versions should also work).  
+To use the script you need Autohotkey installed on your PC. This script was tested with AHK 1.1.28 on Windows 10 (other Windows versions should also work).  
 You can download AHK here: https://www.autohotkey.com/  
 (easiest option is to pick an .exe installer with recent version)
 
 ### run the script
-Once you have successfully installed Autohotkey, `.ahk` files can be run by double-clicking on the `.ahk` files in explorer.  
-Put the 3 files in some folder:  
+Once you have successfully installed Autohotkey, `.ahk` files can be run by double-clicking on the `.ahk` file in explorer.  
+
+Put these 3 files in some folder together:  
 
 `mouse-scroll-run.ahk`  
 `rbutton-block.ahk`   
 `mouse-scroll-v02.ahk`   
 
-Just run the `mouse-scroll-run.ahk`, it will run other two scripts.
-If you want it to start automatically at startup, copy paste shortcut of the `mouse-scroll-run.ahk`.  
+Then just run the `mouse-scroll-run.ahk`, it will run other two scripts.  
+If you want it to run automatically at Windows startup, copy-paste shortcut of the `mouse-scroll-run.ahk` into the "startup" folder.  
 To close the app, manually close tray icons of both scripts.
 
 ### usage
