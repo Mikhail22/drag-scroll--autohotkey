@@ -14,11 +14,11 @@ You can download AHK here: https://www.autohotkey.com/
 Once you have successfully installed Autohotkey, `.ahk` files can be run by double-clicking on the `.ahk` files in explorer.  
 Put the 3 files in some folder:  
 
-`mouse-scroll-run.ahk` <- Run this script, it will run other two scripts:
+`mouse-scroll-run.ahk`  
+`rbutton-block.ahk`   
+`mouse-scroll-v02.ahk`   
 
-`rbutton-block.ahk` - Prevents the right mouse button system-wide.  
-`mouse-scroll-v02.ahk` - Main script. Describes the scrolling logic.  
-
+Just run the `mouse-scroll-run.ahk`, it will run other two scripts.
 If you want it to start automatically at startup, copy paste shortcut of the `mouse-scroll-run.ahk`.  
 To close the app, manually close tray icons of both scripts.
 
