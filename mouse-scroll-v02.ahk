@@ -49,7 +49,6 @@ movelimit := 15				; max amount of scroll at once (better leave as is)
 
 mousegetpos, , Yp									; get mouse Y position
 panp := getkeystate("rbutton", "P")					; save key state / set the key used to scroll
-tikp := A_TickCount									; save time
 dY := 0
 totalMoves := 0
 
