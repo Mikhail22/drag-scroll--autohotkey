@@ -41,7 +41,7 @@ scroll(d, n) {
 
 ; === SETTINGS ===
 k := 0.6						; scroll speed coefficient (higher k = more speed)
-T := 300						; double-Rightclick threshold, millseconds
+
 swap := true 					; swap scroll direction
 ; swap := false 
 movelimit := 15				; max amount of scroll at once (better leave as is)
