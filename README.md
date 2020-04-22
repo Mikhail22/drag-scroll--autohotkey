@@ -21,14 +21,13 @@ Put the 3 files in some folder:
 `rbutton-block.ahk` - Prevents the right mouse button system-wide.  
 `mouse-scroll-v02.ahk` - Main script. Describes the scrolling logic.  
 
-If you want to runit automatically at startup, copy paste shortcut of the `mouse-scroll-run.ahk`.  
+If you want it to start automatically at startup, copy paste shortcut of the `mouse-scroll-run.ahk`.  
 To close the app, manually close tray icons of both scripts.
 
 ### usage
-Press and hold the right mouse button to scroll - faster movement will scroll more.  
-The script will block the Rbutton system-wide. To invoke the context menu - double click right mouse button, or just use Shift + right click or Ctrl + right click.  
+Press and hold the right mouse button to scroll - faster movement will scroll more.  . 
 Right mouse button is chosen for best ergonomics, but this can be changed in the main script file.  
-If you still need the Rbutton in some app, you might want to add conditional directives to both  scripts, which will exclude specific applications (e.g. directive `#If !winActive("ahk_exe APP_NAME.exe")`).  
+If you need to enable the script only in some app, you might want to add conditional directives to both  scripts, which will exclude specific applications (e.g. directive `#If !winActive("ahk_exe APP_NAME.exe")`).  
 
 Few setup variables are available, see "Settings" section directly in the source code (`mouse-scroll-v02.ahk`).  
 Simply edit the variable in the source code and restart it.
