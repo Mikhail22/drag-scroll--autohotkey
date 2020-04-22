@@ -8,20 +8,20 @@ Scrolling speed is optimized for most comfortable usage with Firefox with smooth
 
 ### installation
 To use the script you need AHK on your computer. This script was tested with AHK 1.1.28 on Windows 10 (other Windows versions should also work).  
-You can download AHK here: https://www.autohotkey.com/download/1.1/  
+You can download AHK here: https://www.autohotkey.com/  
 (easiest option is to pick an .exe installer with recent version)
 Check out official website for more information: https://www.autohotkey.com/
 
 ### run the script
 Once you have successfully installed Autohotkey, `.ahk` files can be run by double-clicking on the `.ahk` files in explorer.  
-Put all 3 files in some folder and run `mouse-scroll-run.ahk`.
-Files you need:  
+Put the 3 files in some folder:  
 
 `mouse-scroll-run.ahk` <- Run this script, it will run other two scripts:
 
 `rbutton-block.ahk` - Prevents the right mouse button system-wide.  
 `mouse-scroll-v02.ahk` - Main script. Describes the scrolling logic.  
 
+If you want to runit automatically at startup, copy paste shortcut of the `mouse-scroll-run.ahk`.  
 To close the app, manually close tray icons of both scripts.
 
 ### usage
