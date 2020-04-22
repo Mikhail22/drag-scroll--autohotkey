@@ -34,9 +34,6 @@ Simply edit the variable in the source code and restart it.
 To set the scroll speed, edit the line:  
 > k := 0.6
 
-To set the double right click threshold in milliseconds, edit the line:  
-> T := 300
-
 To swap the scroll direction: see line  
 > swap := true
 
