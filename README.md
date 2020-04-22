@@ -1,4 +1,4 @@
-# Autohotkey - Mouse scroll
+# Autohotkey - Mouse scroll (drag scroll)
 This Autohotkey (short: AHK) script provides system-wide mouse scrolling functionality.  
 By using this script you don't have to use the mouse wheel for scrolling anymore. Instead, it uses mouse vertical movement for scrolling, which turns out to be much more efficient and it also significantly reduces stress on the operator's hand.    
 **Important**: For smoother scrolling set the scroll step to **"1"** in windows mouse properties:  
