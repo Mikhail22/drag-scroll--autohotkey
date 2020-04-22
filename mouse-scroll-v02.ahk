@@ -1,12 +1,10 @@
+
 /*
 Mouse Scroll v.02 
 by Mikhail V., 2018 
 tested on Windows 10, AHK 1.1.28
-
-Note: this app uses right mouse button to toggle the scroll, so the rbutton must be blocked
+Note: this app uses right mouse button to toggle the scroll, so the rbutton will be blocked
 (see rbutton-block.ahk) to prevent the context menu popup. 
-To invoke the context menu, use double-Rightclick, or Ctrl-Rightclick.
-
 == Usage ==
 Press and hold the right mouse button and move the mouse vertically.
 To set another key: see line 
@@ -53,12 +51,14 @@ mousegetpos, , Yp									; get mouse Y position
 panp := getkeystate("rbutton", "P")					; save key state / set the key used to scroll
 tikp := A_TickCount									; save time
 dY := 0
+totalMoves := 0
 
 loop 
 {
-	sleep 30
+	sleep 10
 	pan := getkeystate("rbutton", "P")				; set the key used to scroll
 	pan_on := (pan > panp)							; check if key state is changed 
+	pan_off := (pan < panp)							; check if key state is changed 
 	panp := pan
 	; tooltip %pan%
 	mousegetpos, , Y									; get current mouse position Y
@@ -74,19 +74,15 @@ loop
 	; tooltip,  %direct% , %dY%	
 	if (pan = true) {
 		scroll(direct, moves)
+		totalMoves := totalMoves + moves
 	}
-	
-	; ===  context menu on double-Rightclick
-	if (pan_on = true) {
-		tik := A_TickCount							; get current time
-		dt := tik - tikp								; get time past from previous r-click
-		tikp := tik										; save current time in a temp variable
-		if (dt < T) {
+	if (pan_off = true) {
+		if (totalMoves = 0) {
 			send {rbutton}
 		}
+		totalMoves := 0
 	}
 	 
 }
-
 
 ; +esc:: exitapp
