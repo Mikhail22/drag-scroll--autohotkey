@@ -2,7 +2,7 @@
 This Autohotkey script provides system-wide drag-to-scroll functionality.  
 By using this script you don't have to use the mouse wheel for scrolling anymore. Instead, it uses mouse vertical movement for scrolling, which turns out to be much more efficient and it also significantly reduces stress on the operator's hand.   
 
-**Important**: For smoother scrolling, set the scroll step to **"1"** or **"2"** in windows mouse properties:  
+**Important**: For smoother scrolling, set the scroll step to **1** or **2** in windows mouse properties:  
 <img src="https://github.com/Mikhail22/Autohotkey/blob/master/img/wheel.png">  
   
 
