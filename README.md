@@ -25,20 +25,22 @@ Press and hold the right mouse button to scroll - faster movement will scroll mo
 **Important**: For smoother scrolling, you may first set the system scroll speed to **1** or **2** in system Mouse Properties:   
 
 <img src="./img/wheel.png">  
-<!-- <img src="https://github.com/Mikhail22/Autohotkey/blob/master/img/wheel.png">   -->
-
  
-Few setup variables are available, see "User settings" section directly in the source code (`mouse-scroll-main.ahk`). Simply edit the variable in the source code and restart the app 
+To customize the scrolling you need to edit main script, `mouse-scroll-main.ahk`.
+Few setup variables are available, see "User settings" section in the source code. Simply edit the variable in the source code and restart the app 
 (just run `mouse-scroll-main.ahk` again).
 
-To set the scroll speed, edit the line:  
-> k := 6
+To set the scroll speed factor, edit the `k` variable:  
+> k := 6  
 
-To swap the scroll direction: see line  
+To swap the scroll direction set `swap` variable to "true" or "false":
 > swap := true
 
+<br>
 
-### Files description
+---
+
+### Files summary
 `mouse-scroll-run.ahk` Run this script to run the other two scripts.  
 `mouse-scroll-main.ahk` Main script.  
 `rbutton-block.ahk` Prevents the right mouse button system-wide.
