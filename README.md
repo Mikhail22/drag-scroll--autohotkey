@@ -6,18 +6,19 @@ Further, if you use drawing tablet or touchpad and the driver/OS does not provid
 Firstly, you need Autohotkey installed on your PC. This script was tested with AHK 1.1.28 on Windows 10, but other Windows versions should also work.  You can download AHK from offical site, easiest option is to pick an .exe installer with recent version:  
  https://www.autohotkey.com/  
 
-
-### Run the script
 Once you have successfully installed Autohotkey, `.ahk` files can be run by double-clicking on the `.ahk` file in explorer.  
 
-Put these 3 files in some local folder together:  
+Download and put these 3 files in some local folder together:  
 
 `mouse-scroll-run.ahk`  
 `rbutton-block.ahk`   
 `mouse-scroll-main.ahk`   
 
-Then just run the `mouse-scroll-run.ahk`, it will run other two scripts.  To close the app, manually close tray icons of both scripts.  
-If you want it to run automatically at startup, copy-paste shortcut of the `mouse-scroll-run.ahk` into the "startup" folder. 
+
+### Run the script
+
+Run the `mouse-scroll-run.ahk`, it will run other two scripts.  To close the app, manually close tray icons of both scripts.  
+If you want it to start automatically at startup, copy-paste shortcut of the `mouse-scroll-run.ahk` into the "startup" folder. 
 
 Press and hold the right mouse button to scroll - faster movement will scroll more.
 
