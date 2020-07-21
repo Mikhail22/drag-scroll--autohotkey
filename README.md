@@ -17,6 +17,7 @@ Download and put these 3 files in some local folder together:
 ### Run the script
 
 <a href="">foo</a>
+<a href="" style="pointer-events: none">foo</a>
 <p style="color:#FF0000">foo</p>
 
 Run the [mouse-scroll-run.ahk](mouse-scroll-run.ahk), it will run other two scripts.  To close the app, manually close tray icons of both scripts.  
