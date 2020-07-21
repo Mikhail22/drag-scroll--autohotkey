@@ -3,7 +3,8 @@ This Autohotkey app provides system-wide drag scroll functionality. It uses mous
 Further, if you use a drawing tablet or a touchpad and the driver/OS does not provide drag scroll, then this app solves it.
 
 ### Installation
-Firstly, you need Autohotkey installed on your PC. This script was tested with AHK 1.1.28 on Windows 10, but other Windows versions should also work.  You can download AHK from offical site, easiest option is to pick an .exe installer with recent version:  
+Firstly, you need Autohotkey  [v1.1.27+] installed on your PC.   
+You can download AHK from offical site, easiest option is to pick an .exe installer with recent version:  
  https://www.autohotkey.com/  
 
 Once you have successfully installed Autohotkey, `.ahk` files can be run by double-clicking on the `.ahk` file in explorer.  
