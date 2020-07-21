@@ -1,5 +1,5 @@
-# Drag Scroll Autohotkey 🖱️↕
-This Autohotkey app provides system-wide drag scroll functionality. It uses mouse vertical movement for scrolling, which turns out to be more efficient and it also significantly reduces stress on the operator's hand compared to the scroll wheel. So if you want better scrolling experience (or maybe your scroll wheel broke) then this app is for you.  
+# Drag to scroll Autohotkey 🖱️↕
+This Autohotkey app provides system-wide drag-to-scroll feature. It uses mouse vertical movement for scrolling, which turns out to be more efficient and it also significantly reduces stress on the operator's hand compared to the scroll wheel. So if you want better scrolling experience (or maybe your scroll wheel broke) then this app is for you.  
 Further, if you use a drawing tablet or a touchpad and the driver/OS does not provide drag scroll, then this app solves it.
 
 ### Installation
