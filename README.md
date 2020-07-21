@@ -4,10 +4,10 @@ Further, if you use a drawing tablet or a touchpad and the driver/OS does not pr
 
 ### Installation
 Firstly, you need Autohotkey  [v1.1.27+] installed on your PC.   
-You can download AHK from offical site, easiest option is to pick an .exe installer with recent version:  
+You can download AHK from the offical site, the easiest option is to pick an .exe installer with the recent version:  
  https://www.autohotkey.com/  
 
-Once you have successfully installed Autohotkey, `.ahk` files can be run by double-clicking on the `.ahk` file in explorer.  
+Once you have successfully installed Autohotkey, `.ahk` files can be run directly in explorer.  
 
 Download and put these 3 files in some local folder together:  
 
