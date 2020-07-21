@@ -9,9 +9,9 @@ Once you have installed Autohotkey, `.ahk` files can be run directly in explorer
 
 Download and put these 3 files in some local folder together:  
 
-`mouse-scroll-run.ahk`  
-`rbutton-block.ahk`   
-`mouse-scroll-main.ahk`   
+[mouse-scroll-run.ahk](mouse-scroll-run.ahk)  
+[mouse-scroll-main.ahk](mouse-scroll-main.ahk)  
+[rbutton-block.ahk](rbutton-block.ahk)  
 
 
 ### Run the script
@@ -21,7 +21,7 @@ Download and put these 3 files in some local folder together:
 <p style="color:#FF0000">foo</p>
 
 Run the [mouse-scroll-run.ahk](mouse-scroll-run.ahk), it will run other two scripts.  To close the app, manually close tray icons of both scripts.  
-If you want it to start automatically at startup, copy-paste shortcut of the [mouse-scroll-run.ahk]() into the "startup" folder. 
+If you want it to start automatically at startup, copy-paste shortcut of the [mouse-scroll-run.ahk](&#8203;) into the "startup" folder. 
 
 Press and hold the right mouse button to scroll - faster movement will scroll more.
 
