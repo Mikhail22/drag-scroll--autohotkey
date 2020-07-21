@@ -1,6 +1,6 @@
 # Drag Scroll Autohotkey 🖱️↕
 This Autohotkey app provides system-wide drag scroll functionality. It uses mouse vertical movement for scrolling, which turns out to be more efficient and it also significantly reduces stress on the operator's hand compared to the scroll wheel. So if you want better scrolling experience (or maybe your scroll wheel broke) then this app is for you.  
-Further, if you use drawing tablet or touchpad and the driver/OS does not provide drag scroll, then this app solves it.
+Further, if you use a drawing tablet or a touchpad and the driver/OS does not provide drag scroll, then this app solves it.
 
 ### Installation
 Firstly, you need Autohotkey installed on your PC. This script was tested with AHK 1.1.28 on Windows 10, but other Windows versions should also work.  You can download AHK from offical site, easiest option is to pick an .exe installer with recent version:  
