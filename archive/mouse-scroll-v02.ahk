@@ -5,12 +5,6 @@ by Mikhail V., 2018
 tested on Windows 10, AHK 1.1.28
 Note: this app uses right mouse button to toggle the scroll, so the rbutton will be blocked
 (see rbutton-block.ahk) to prevent the context menu popup. 
-== Usage ==
-Press and hold the right mouse button and move the mouse vertically.
-To set another key: see line 
->    pan := getkeystate("rbutton", "P")
-To swap the scroll direction: see line
->    swap := true
 */
 
 #SingleInstance force
