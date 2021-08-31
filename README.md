@@ -32,6 +32,11 @@ Few setup variables are available, see “User settings” section in the source
 To set the scroll speed factor, edit the `k` variable:  
 > k := 6  
 
-To swap the scrolling direction, set the `swap` variable to “true” or “false”:
+To swap the scrolling direction, set the `swap` variable to “true” or “false”:  
 > swap := true  
+
+
+To use horizontal movement as inputs, set the `horiz` variable to “true” or “false”:  
+> horiz := true 				
+ 
 

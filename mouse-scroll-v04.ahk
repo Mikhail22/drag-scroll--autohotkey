@@ -13,6 +13,10 @@ running := 0
 ; === User settings ===
 swap := false 
 ; swap := true 				; swap scroll direction
+
+; horiz := false 
+horiz := true 				; use horizontal movement as input
+
 k := 1					; scroll speed coefficient (higher k means higher speed)
 
 ; === Internal settings ===
@@ -33,9 +37,14 @@ loop
 
 	if (running) {
 		; mousegetpos, mx						; get current mouse position 
-		mousegetpos, , mx						; get current mouse position 
-		dy := k * (mx - mxLast)						; relative mouse movement
-		mxLast := mx									; save position
+		mousegetpos, mx, my						; get current mouse position 
+		if (horiz = 0) {
+			dy := k * (my - myLast)						; relative mouse movement vertical
+			myLast := my									; save position
+		} else {
+			dy := k * (mx - mxLast)						; relative mouse movement horizontal
+			mxLast := mx									; save position
+		}
 		dyTotal := dyTotal + dy
 		scrolls := dyTotal // S
 		dyTotal := dyTotal - scrolls * S					; calculate remainder after division
@@ -54,7 +63,7 @@ loop
 rbutton::
 	running := 1
 	dyTotal := 0
-	mousegetpos, mxLast
+	mousegetpos, mxLast, myLast
 return
 
 rbutton up::
