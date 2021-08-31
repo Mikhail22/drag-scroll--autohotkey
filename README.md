@@ -36,7 +36,7 @@ To swap the scrolling direction, set the `swap` variable to “true” or “fal
 > swap := true  
 
 
-To use horizontal movement as inputs, set the `horiz` variable to “true” or “false”:  
+To use horizontal movement as input, set the `horiz` variable to “true” or “false”:  
 > horiz := true 				
  
 
