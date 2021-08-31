@@ -29,14 +29,14 @@ If you want the app to start automatically at OS startup, copy-paste the shortcu
 To customize the scrolling speed you need to edit the script.
 Few setup variables are available, see “User settings” section in the source code. Simply edit the variable in the source code and restart the app (just run again, it should reload automatically).
 
-To set the scroll speed factor, edit the `k` variable:  
-> k := 6  
-
+To use horizontal movement as input (it is better ergonomically and set as default), set the `horiz` variable to “true” or “false”:  
+> horiz := true 				
+ 
 To swap the scrolling direction, set the `swap` variable to “true” or “false”:  
 > swap := true  
 
+To set the scroll speed factor, edit the `k` variable:  
+> k := 6  
 
-To use horizontal movement as input, set the `horiz` variable to “true” or “false”:  
-> horiz := true 				
- 
+
 
