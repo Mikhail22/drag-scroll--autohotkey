@@ -19,15 +19,17 @@ Download the script:
 Run the “mouse-scroll-v04.ahk”. Now hold the right mouse button and move the mouse to scroll.  
 To close the app, manually close the tray icon.  
 
-If you want the app to start automatically at OS startup, copy-paste the shortcut of the “mouse-scroll-v04.ahk” into the Startup folder (%appdata%\Microsoft\Windows\Start Menu\Programs\Startup).  
+If you want the app to start automatically at OS startup, copy-paste the script or a shortcut into the Startup folder (%appdata%\Microsoft\Windows\Start Menu\Programs\Startup).  
 
 ### Setup 
 **Note**: For smoother scrolling, you may first set the system scroll speed to “1” or “2” in system Mouse Properties:   
 
 <img src="./img/wheel.png">  
  
-To customize the scrolling speed you need to edit the script.
-Few setup variables are available, see “User settings” section in the source code. Simply edit the variable in the source code and restart the app (just run again, it should reload automatically).
+Customizations are made in the script directly.  
+Few setup variables are available, see the “User settings” section in the source code. Simply edit the variable in the source code and restart the app (just run it again, it will reload immediately, or click "reload" in the tray icon).
+
+Settings:   
 
 To use horizontal movement as input (it is better ergonomically and set as default), set the `horiz` variable to “true” or “false”:  
 > horiz := true 				
