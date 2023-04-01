@@ -41,4 +41,11 @@ To set the scroll speed factor, edit the `k` variable:
 > k := 6  
 
 
+### Other versions  
+
+2d scroll (in both directions) 
+
+https://github.com/Mikhail22/drag-scroll--autohotkey/tree/master/archive/scroll-2d#scroll-in-both-directions
+
+
 
